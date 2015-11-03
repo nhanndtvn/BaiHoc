@@ -1,0 +1,7 @@
+package nhanngo.com.myhashmap;
+
+public class SanPham {
+private String masp;
+private String tensp;
+private double giasp;
+}

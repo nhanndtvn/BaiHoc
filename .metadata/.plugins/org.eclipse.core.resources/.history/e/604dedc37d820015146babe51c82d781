@@ -1,0 +1,44 @@
+package nhanngo.com.myhashmap;
+
+import java.util.HashMap;
+
+public class Thucdon {
+	private HashMap<Integer, SanPham> dsSanPham;
+
+	public HashMap<Integer, SanPham> getDsSanPham() {
+		return dsSanPham;
+	}
+
+	public void setDsSanPham(HashMap<Integer, SanPham> dsSanPham) {
+		this.dsSanPham = dsSanPham;
+	}
+
+	public Thucdon() {
+		super();
+		this.dsSanPham =new HashMap<>();
+	}
+	
+	public void themSanPham(SanPham sp)
+	{
+		if(dsSanPham.containsKey(sp.getMasp()))		
+			System.out.println("San pham co ma "+sp.getMasp() +" da ton tai!!!");
+		else
+		{
+			dsSanPham.put(sp.getMasp(), sp);
+			System.out.println("San pham "+sp.getMasp() +" da them thanh cong.");
+		}
+	}
+	
+	public int soSanpham()
+	{
+		return dsSanPham.size();
+	}
+	
+	public SanPham laySanpham(int masp)
+	{
+		if(dsSanPham.get(masp))
+			
+			return null;
+	}
+
+}
