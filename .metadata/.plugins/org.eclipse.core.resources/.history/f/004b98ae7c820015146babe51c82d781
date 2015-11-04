@@ -1,0 +1,22 @@
+package nhanngo.com.myhashmap;
+
+import java.util.HashMap;
+
+public class Thucdon {
+	private HashMap<Double, SanPham> dsSanPham;
+
+	public HashMap<Double, SanPham> getDsSanPham() {
+		return dsSanPham;
+	}
+
+	public void setDsSanPham(HashMap<Double, SanPham> dsSanPham) {
+		this.dsSanPham = dsSanPham;
+	}
+
+	public Thucdon() {
+		super();
+		this.dsSanPham =new HashMap<>();
+	}
+	
+
+}
