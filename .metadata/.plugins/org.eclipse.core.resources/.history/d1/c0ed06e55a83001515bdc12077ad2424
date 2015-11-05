@@ -1,0 +1,30 @@
+package nhanngo.com.inputoutput;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class ReadWriteFile {
+	public void feadFile(String url)
+	{
+		int i;
+		String s="";
+
+		// Khai bao file
+		try{
+			
+		
+		FileInputStream stream=new FileInputStream(url);
+		}
+		catch(FileNotFoundException e)
+		{
+			System.out.println("Khong tim thay file");
+		}
+		catch (IOException e2) {
+			System.out.println("Loi IOException");
+		}
+		
+	}
+	
+
+}

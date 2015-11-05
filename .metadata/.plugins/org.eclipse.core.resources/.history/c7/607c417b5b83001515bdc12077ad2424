@@ -1,0 +1,13 @@
+package nhanngo.com.test;
+
+import nhanngo.com.inputoutput.ReadWriteFile;
+
+public class TestIOStream {
+	
+	public static void main(String[] args) {
+		ReadWriteFile objRead=new ReadWriteFile();
+		objRead.feadFile("D:\Test.txt");
+	}
+	
+	
+}

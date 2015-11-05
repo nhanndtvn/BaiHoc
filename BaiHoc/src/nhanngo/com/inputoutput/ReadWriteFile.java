@@ -1,0 +1,62 @@
+package nhanngo.com.inputoutput;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.concurrent.SynchronousQueue;
+
+public class ReadWriteFile {
+	public void readFile(String url)
+	{
+		int i;
+		String s="";
+
+		// Khai bao file
+		try{		
+			FileInputStream stream=new FileInputStream(url);
+			while ((i=stream.read())!=-1)
+				s+=(char)i;
+			System.out.println(s);
+			
+		}
+		catch(FileNotFoundException e)
+		{
+			System.out.println("Khong tim thay file");
+		}
+		catch (IOException e2) {
+			System.out.println("Loi IOException: "+e2.getMessage());
+		}
+		catch (Exception e3) {
+			System.out.println("Loi: " +e3.getMessage());
+		}
+
+	}
+	
+	public void writeFile(String url, String msg)
+	{
+		try
+		{
+			FileOutputStream out=new FileOutputStream(url);
+			for(int i=0; i<msg.length();i++)		
+				out.write(msg.charAt(i));
+			System.out.println("Ghi file thanh cong");
+		}
+		catch (IOException e)
+		{
+			System.out.println("Loi IOException"+e.getMessage());
+		}
+		catch(Exception ex)
+		{
+			System.out.println("Loi Exception: "+ex.getMessage());
+		}
+	}
+
+	public ReadWriteFile() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+
+
+}

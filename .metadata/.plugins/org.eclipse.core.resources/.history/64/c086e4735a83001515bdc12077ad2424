@@ -1,0 +1,10 @@
+package nhanngo.com.inputoutput;
+
+public class ReadWriteFile {
+	public void feadFile(String url)
+	{
+		
+	}
+	
+
+}
