@@ -1,0 +1,14 @@
+package nhanngo.com.inputoutput;
+
+import java.io.FileInputStream;
+
+public class ReadWriteFile {
+	public void feadFile(String url)
+	{
+		int i;
+		String s="";
+		FileInputStream stream=new FileInputStream(url);
+	}
+	
+
+}

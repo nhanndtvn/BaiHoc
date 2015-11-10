@@ -1,0 +1,8 @@
+package nhanngo.com.test;
+
+import nhanngo.com.inputoutput.ReadWriteFile;
+
+public class TestIOStream {
+	ReadWriteFile objRead=new ReadWriteFile();
+	
+}
