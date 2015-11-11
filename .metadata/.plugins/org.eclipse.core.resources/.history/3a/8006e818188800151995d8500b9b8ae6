@@ -1,0 +1,26 @@
+package nhanngo.com.util;
+
+import nhanngo.com.model.HashKey;
+
+public class GenerateCode {
+	
+	public static String generateSequenceNumber(int length, int returnLength)
+	{
+		String result="";
+		int lengthOfKey= length/returnLenght;
+		double initLoop=Math.pow(10, lengthOfKey);
+		
+		for(int i=0;i<initLoop;i++)
+		{
+			HashKey hashKey=new HashKey();
+			hashKey.setHashKey(""+i);
+			
+			while(hashKey.getHashKey().length()<lengthOfKey)
+			{
+				hashKey.setHashKey("0"+hashKey.getHashKey());
+			}			
+		}
+		return result;
+	}
+
+}

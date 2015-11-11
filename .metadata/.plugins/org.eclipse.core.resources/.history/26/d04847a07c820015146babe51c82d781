@@ -1,8 +1,0 @@
-package nhanngo.com.myhashmap;
-
-import java.util.HashMap;
-
-public class Thucdon {
-	private HashMap<Double, SanPham> dsSanPham;
-
-}

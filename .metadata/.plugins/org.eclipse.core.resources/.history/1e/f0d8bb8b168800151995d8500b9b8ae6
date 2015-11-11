@@ -1,0 +1,16 @@
+package nhanngo.com.test;
+
+import nhanngo.com.model.GiftCodeList;
+import nhanngo.com.model.HashKey;
+import nhanngo.com.model.HashKeyList;
+
+public class TestGiftCode {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		HashKeyList hashKeyList=new HashKeyList();
+
+	}
+
+}

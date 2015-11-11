@@ -1,0 +1,59 @@
+package nhanngo.com.model;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import nhanngo.com.util.GenerateCode;
+
+public class HashKeyList {
+	private HashMap<String, HashKey> hashKeyList;
+
+	public HashMap<String, HashKey> getHashKeyList() {
+		return hashKeyList;
+	}
+
+	public void setHashKeyList(HashMap<String, HashKey> hashKeyList) {
+		this.hashKeyList = hashKeyList;
+	}
+
+	public HashKeyList() {
+		super();
+		// TODO Auto-generated constructor stub
+		hashKeyList=new HashMap<>();
+	} 
+	
+	public void showAllHashKey()
+	{
+		for (HashKey hs:hashKeyList.values())
+		{
+			System.out.println(hs);
+		}
+	}
+
+	//Generate Number[0-9] key with specify length of Voucher Code
+	public boolean generateNumKey(int length)
+	{
+		boolean result=false;
+		
+		if(length>=4 && length <=20)
+		{
+			int lengthOfKey= length/2;
+			ArrayList<String> hashKey=new ArrayList<>();
+			hashKey=GenerateCode.generateSequenceNumber(lengthOfKey);
+			
+			for(String str:hashKey)
+			{
+				HashKey hashKeyObj=new HashKey();
+				hashKeyObj.setHashKey(str);
+				if(!hashKeyList.containsKey(hashKeyObj.getHashKey()))
+					hashKeyList.put(hashKeyObj.getHashKey(), hashKeyObj);
+			}
+			
+			result=true;
+		}
+		else					
+			result=false;					
+		
+		return result;
+	}
+}

@@ -1,0 +1,10 @@
+package nhanngo.com.util;
+
+public class GenerateCode {
+	
+	public static void generateSequenceNumber(int length)
+	{
+		
+	}
+
+}
