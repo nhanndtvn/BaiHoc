@@ -6,11 +6,11 @@ public class TestIOStream {
 	
 	public static void main(String[] args) {
 		ReadWriteFile objRead=new ReadWriteFile();
-		objRead.readFile("D:/Test.txt");
+		//objRead.readFile("D:/Test.txt");
 		
 		objRead.writeFile("Data\\TextFile.txt", "Ghi lai file!");
 		System.out.println("Noi dung da ghi");
-		objRead.readFile("Data\\TextFile.txt");
+		objRead.readFile("D:/Test2.txt");
 	}
 	
 	

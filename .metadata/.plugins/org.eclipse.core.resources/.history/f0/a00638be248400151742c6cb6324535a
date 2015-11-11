@@ -8,9 +8,9 @@ public class TestIOStream {
 		ReadWriteFile objRead=new ReadWriteFile();
 		objRead.readFile("D:/Test.txt");
 		
-		objRead.writeFile("Data\\TextFile.txt", "Ghi lai file!");
+		objRead.writeFile("D:/Test2.txt", "Ghi lai lan 2!");
 		System.out.println("Noi dung da ghi");
-		objRead.readFile("Data\\TextFile.txt");
+		objRead.readFile("D:/Test2.txt");
 	}
 	
 	
